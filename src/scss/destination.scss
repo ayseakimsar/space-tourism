@@ -1,0 +1,98 @@
+@import "_globals.scss";
+@import "_pageTitle.scss";
+
+.destination-page-title {
+  @include pageTitle();
+}
+
+.destination-nav {
+  margin-top: 64px;
+  margin-left: 832px;
+
+  &-link {
+    font-family: getFontFamily(barlow-condensed);
+    color: getColor(pale-lavender);
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    margin-right: 35px;
+    cursor: pointer;
+    padding-bottom: 12px;
+
+    &.active {
+      &:hover {
+        border-bottom: 3px solid white;
+      }
+    }
+
+    &:hover {
+      border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+.active {
+  border-bottom: 3px solid white;
+  color: white;
+}
+
+.destination-section {
+  display: flex;
+  gap: 157px;
+  color: getColor(pure-white);
+  width: 445px;
+
+  img {
+    margin-left: 230px;
+  }
+  .destination-title {
+    font-family: getFontFamily(bellefair);
+    font-size: 100px;
+    line-height: 115px;
+    text-transform: uppercase;
+    margin-top: 37px;
+  }
+
+  .destination-text {
+    font-family: getFontFamily(barlow);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: getColor(pale-lavender);
+  }
+
+  .destination-divider {
+    width: 445px;
+    height: 1px;
+    background: #383b4b;
+    margin-top: 54px;
+  }
+
+  .destination-stats {
+    display: flex;
+    gap: 125px;
+    margin-top: 28px;
+
+    .destination-distance,
+    .destination-time {
+      &-text {
+        font-family: getFontFamily(barlow-condensed);
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2.3625px;
+        text-transform: uppercase;
+        color: getColor(pale-lavender);
+      }
+      &-value {
+        font-family: getFontFamily(bellefair);
+        font-size: 28px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: getColor(pure-white);
+        margin-top: 12px;
+      }
+    }
+  }
+}

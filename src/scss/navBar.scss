@@ -1,0 +1,41 @@
+.nav {
+  padding-left: 123px;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  width: 830px;
+  height: 96px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+
+  &-link {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: 2.7px;
+    text-decoration: none;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom-color 0.3s ease-in;
+    &.active {
+      border-bottom-color: white;
+      &:hover {
+        border-bottom-color: white;
+      }
+    }
+    &:hover {
+      border-bottom-color: rgba(255, 255, 255, 0.5);
+    }
+
+    &:active {
+      border-bottom-color: white;
+    }
+    span {
+      margin-right: 12px;
+      font-weight: 700;
+    }
+  }
+}

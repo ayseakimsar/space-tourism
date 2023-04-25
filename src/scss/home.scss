@@ -1,0 +1,60 @@
+@import "_globals.scss";
+
+.hero {
+  display: flex;
+  gap: 384px;
+  color: white;
+  margin-top: 251px;
+  margin-left: 167px;
+  width: 450px;
+  height: 382px;
+
+  &-intro-title {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33.6px;
+    letter-spacing: 4.72px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    color: getColor(pale-lavender);
+  }
+
+  &-title {
+    font-family: "Bellefair", serif;
+    font-size: 150px;
+    text-transform: uppercase;
+    color: getColor(pure-white);
+  }
+
+  &-text {
+    font-family: "Barlow", sans-serif;
+    color: getColor(pale-lavender);
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  &-btn {
+    align-self: flex-end;
+    width: 274px;
+    height: 274px;
+
+    &-explore {
+      width: 274px;
+      height: 274px;
+      border-radius: 50%;
+      border: none;
+      color: getColor(midnight-blue);
+      font-family: getFontFamily(bellefair);
+      text-transform: uppercase;
+      font-size: 32px;
+      letter-spacing: 2px;
+      line-height: 37px;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        box-shadow: 0 0 0 88px rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+}

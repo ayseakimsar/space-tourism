@@ -1,0 +1,76 @@
+.crew-page {
+  position: relative;
+}
+
+.crew-page-title {
+  color: #fff;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  letter-spacing: 4.725px;
+  margin-top: 76px;
+}
+.crew-page-title span {
+  opacity: 0.25;
+  margin-right: 28px;
+  margin-left: 166.5px;
+}
+
+.crew-member {
+  color: white;
+  margin-left: 165px;
+  font-family: "Bellefair";
+}
+.crew-member-job {
+  font-size: 32px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.5;
+  padding-top: 154px;
+}
+.crew-member-name {
+  font-size: 56px;
+  line-height: 64px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  width: 614px;
+}
+.crew-member-bio {
+  font-family: "Barlow";
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+  margin-top: 27px;
+  width: 444px;
+  height: 160px;
+}
+.crew-member-img {
+  position: absolute;
+  left: 800px;
+  bottom: -94px;
+}
+
+.crew-nav {
+  display: flex;
+  gap: 24px;
+  margin-left: 167px;
+}
+.crew-nav-button {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.17);
+  border-radius: 50%;
+  border: none;
+  margin-top: 88px;
+}
+.crew-nav-button.crew-active:hover {
+  background-color: white;
+}
+.crew-nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.crew-active {
+  background-color: white;
+}/*# sourceMappingURL=crew.css.map */

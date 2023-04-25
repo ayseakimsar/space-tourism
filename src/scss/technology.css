@@ -1,0 +1,43 @@
+.technology {
+  color: white;
+  display: flex;
+  gap: 80px;
+}
+.technology-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.technology-nav-link {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-family: "Bellefair";
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+.technology-intro-title {
+  font-family: "Barlow Condensed";
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #d0d6f9;
+  text-transform: uppercase;
+}
+.technology-main-title {
+  font-family: "Bellefair";
+  font-size: 56px;
+  line-height: 64px;
+  text-transform: uppercase;
+}
+.technology-text {
+  font-family: "Barlow";
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+}/*# sourceMappingURL=technology.css.map */

@@ -1,0 +1,19 @@
+$colors: (
+  "midnight-blue": #0b0d17,
+  "pale-lavender": #d0d6f9,
+  "pure-white": #fff,
+);
+
+$font-families: (
+  "barlow": "Barlow",
+  "barlow-condensed": "Barlow Condensed",
+  "bellefair": "Bellefair",
+);
+
+@function getColor($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+@function getFontFamily($family-name) {
+  @return map-get($font-families, $family-name);
+}

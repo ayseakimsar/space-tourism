@@ -1,0 +1,22 @@
+.shared-layout {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  margin-left: 55px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.nav-divider {
+  position: absolute;
+  top: 48px;
+  left: 112px;
+}/*# sourceMappingURL=sharedLayout.css.map */

@@ -1,0 +1,95 @@
+.destination-page-title {
+  color: #fff;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  letter-spacing: 4.725px;
+  margin-top: 76px;
+}
+.destination-page-title span {
+  opacity: 0.25;
+  margin-right: 28px;
+  margin-left: 166.5px;
+}
+
+.destination-nav {
+  margin-top: 64px;
+  margin-left: 832px;
+}
+.destination-nav-link {
+  font-family: "Barlow Condensed";
+  color: #d0d6f9;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  margin-right: 35px;
+  cursor: pointer;
+  padding-bottom: 12px;
+}
+.destination-nav-link.active:hover {
+  border-bottom: 3px solid white;
+}
+.destination-nav-link:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.active {
+  border-bottom: 3px solid white;
+  color: white;
+}
+
+.destination-section {
+  display: flex;
+  gap: 157px;
+  color: #fff;
+  width: 445px;
+}
+.destination-section img {
+  margin-left: 230px;
+}
+.destination-section .destination-title {
+  font-family: "Bellefair";
+  font-size: 100px;
+  line-height: 115px;
+  text-transform: uppercase;
+  margin-top: 37px;
+}
+.destination-section .destination-text {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+}
+.destination-section .destination-divider {
+  width: 445px;
+  height: 1px;
+  background: #383b4b;
+  margin-top: 54px;
+}
+.destination-section .destination-stats {
+  display: flex;
+  gap: 125px;
+  margin-top: 28px;
+}
+.destination-section .destination-stats .destination-distance-text,
+.destination-section .destination-stats .destination-time-text {
+  font-family: "Barlow Condensed";
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  color: #d0d6f9;
+}
+.destination-section .destination-stats .destination-distance-value,
+.destination-section .destination-stats .destination-time-value {
+  font-family: "Bellefair";
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 12px;
+}/*# sourceMappingURL=destination.css.map */

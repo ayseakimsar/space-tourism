@@ -1,0 +1,76 @@
+@import "_globals.scss";
+@import "_pageTitle.scss";
+
+.crew-page {
+  position: relative;
+}
+.crew-page-title {
+  @include pageTitle();
+}
+
+.crew-member {
+  color: white;
+  margin-left: 165px;
+  font-family: getFontFamily("bellefair");
+
+  &-job {
+    font-size: 32px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: getColor("pure-white");
+    opacity: 0.5;
+    padding-top: 154px;
+  }
+
+  &-name {
+    font-size: 56px;
+    line-height: 64px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    width: 614px;
+  }
+
+  &-bio {
+    font-family: getFontFamily(barlow);
+    font-size: 18px;
+    line-height: 32px;
+    color: getColor(pale-lavender);
+    margin-top: 27px;
+    width: 444px;
+    height: 160px;
+  }
+
+  &-img {
+    position: absolute;
+    left: 800px;
+    bottom: -94px;
+  }
+}
+
+.crew-nav {
+  display: flex;
+  gap: 24px;
+  margin-left: 167px;
+  &-button {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0.17);
+    border-radius: 50%;
+    border: none;
+    margin-top: 88px;
+    transition: all 0.3s ease-in-out;
+    &.crew-active {
+      &:hover {
+        background-color: white;
+      }
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.crew-active {
+  background-color: white;
+}
