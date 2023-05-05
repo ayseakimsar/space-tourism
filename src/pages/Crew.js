@@ -10,7 +10,6 @@ export default function Crew() {
       <header className="crew-page-title">
         <span>02</span>meet your crew
       </header>
-
       <section className="crew-member">
         <div className="crew-member-info">
           <div className="crew-member-job ">{crewMember.role}</div>
@@ -19,48 +18,52 @@ export default function Crew() {
         </div>
 
         <img
-          className="crew-member-img"
+          className={`crew-member-img ${crewMember.name
+            .split(" ")
+            .map((name) => name.toLowerCase())
+            .join("-")}`}
           src={require(`../assets/crew/image-${crewMember.name
             .split(" ")
             .map((name) => name.toLowerCase())
             .join("-")}.png`)}
           alt={crewMember.name}
         />
+
+        <nav className="crew-nav">
+          <button
+            className={
+              "crew-nav-button" +
+              " " +
+              (crewMember === data.crew[0] ? "crew-active" : null)
+            }
+            onClick={() => setCrewMember(data.crew[0])}
+          ></button>
+          <button
+            className={
+              "crew-nav-button" +
+              " " +
+              (crewMember === data.crew[1] ? "crew-active" : null)
+            }
+            onClick={() => setCrewMember(data.crew[1])}
+          ></button>
+          <button
+            className={
+              "crew-nav-button" +
+              " " +
+              (crewMember === data.crew[2] ? "crew-active" : null)
+            }
+            onClick={() => setCrewMember(data.crew[2])}
+          ></button>
+          <button
+            className={
+              "crew-nav-button" +
+              " " +
+              (crewMember === data.crew[3] ? "crew-active" : null)
+            }
+            onClick={() => setCrewMember(data.crew[3])}
+          ></button>
+        </nav>
       </section>
-      <div className="crew-nav">
-        <button
-          className={
-            "crew-nav-button" +
-            " " +
-            (crewMember === data.crew[0] ? "crew-active" : null)
-          }
-          onClick={() => setCrewMember(data.crew[0])}
-        ></button>
-        <button
-          className={
-            "crew-nav-button" +
-            " " +
-            (crewMember === data.crew[1] ? "crew-active" : null)
-          }
-          onClick={() => setCrewMember(data.crew[1])}
-        ></button>
-        <button
-          className={
-            "crew-nav-button" +
-            " " +
-            (crewMember === data.crew[2] ? "crew-active" : null)
-          }
-          onClick={() => setCrewMember(data.crew[2])}
-        ></button>
-        <button
-          className={
-            "crew-nav-button" +
-            " " +
-            (crewMember === data.crew[3] ? "crew-active" : null)
-          }
-          onClick={() => setCrewMember(data.crew[3])}
-        ></button>
-      </div>
     </div>
   );
 }

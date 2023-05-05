@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  .nav {
+    padding: 0 48px 0 48px;
+    width: 450px;
+    height: 96px;
+
+    &-link {
+      font-size: 14px;
+      letter-spacing: 2.3625px;
+      span {
+        display: none;
+      }
+    }
+  }
+}

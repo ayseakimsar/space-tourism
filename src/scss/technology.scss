@@ -3,6 +3,10 @@
 
 .technology-page {
   position: relative;
+
+  &-title {
+    @include desktopPageTitle();
+  }
 }
 
 .technology {
@@ -69,9 +73,23 @@
     width: 444px;
   }
 
-  &-img {
-    position: absolute;
-    right: 0px;
-    top: 88px;
+  &-img-container {
+    width: 540px;
+    height: 540px;
+    background-repeat: no-repeat;
   }
 }
+
+.launch-vehicle {
+  background-image: url("../assets/technology/image-launch-vehicle-portrait.jpg");
+}
+
+.spaceport {
+  background-image: url("../assets/technology/image-spaceport-portrait.jpg");
+}
+
+.space-capsule {
+  background-image: url("../assets/technology/image-space-capsule-portrait.jpg");
+}
+
+@import "_technology-responsive.scss";

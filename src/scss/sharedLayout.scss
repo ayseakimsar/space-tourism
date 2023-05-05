@@ -6,8 +6,9 @@
   background-repeat: no-repeat;
   background-color: getColor(midnight-blue);
   padding-top: 40px;
-  width: 100%;
+  max-width: 1440px;
   height: 100%;
+  overflow: hidden;
 }
 
 .top-bar {
@@ -23,3 +24,21 @@
   top: 48px;
   left: 112px;
 }
+
+.homeBackground {
+  background-image: url("../assets/home/background-home-desktop.jpg");
+}
+
+.destinationBackground {
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
+}
+
+.crewBackground {
+  background-image: url("../assets/crew/background-crew-desktop.jpg");
+}
+
+.technologyBackground {
+  background-image: url("../assets/technology/background-technology-desktop.jpg");
+}
+
+@import "_sharedLayout-responsive.scss";

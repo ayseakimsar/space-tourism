@@ -13,53 +13,54 @@ export default function Destination() {
       <header className="destination-page-title">
         <span>01</span>pick your destination
       </header>
-      <nav className="destination-nav">
-        <button
-          className={
-            "destination-nav-link" +
-            " " +
-            (active.toLowerCase() === "moon" ? "active" : null)
-          }
-          onClick={() => setActive("Moon")}
-        >
-          moon
-        </button>
-        <button
-          className={
-            "destination-nav-link" +
-            " " +
-            (active.toLowerCase() === "mars" ? "active" : null)
-          }
-          onClick={() => setActive("Mars")}
-        >
-          mars
-        </button>
-        <button
-          className={
-            "destination-nav-link" +
-            " " +
-            (active.toLowerCase() === "europa" ? "active" : null)
-          }
-          onClick={() => setActive("Europa")}
-        >
-          europa
-        </button>
-        <button
-          className={
-            "destination-nav-link" +
-            " " +
-            (active.toLowerCase() === "titan" ? "active" : null)
-          }
-          onClick={() => setActive("Titan")}
-        >
-          titan
-        </button>
-      </nav>
+
       <section className="destination-section">
         <img
           src={require(`../assets/destination/image-${active.toLowerCase()}.png`)}
           alt={destination.name}
         />
+        <nav className="destination-nav">
+          <button
+            className={
+              "destination-nav-link" +
+              " " +
+              (active.toLowerCase() === "moon" ? "active" : null)
+            }
+            onClick={() => setActive("Moon")}
+          >
+            moon
+          </button>
+          <button
+            className={
+              "destination-nav-link" +
+              " " +
+              (active.toLowerCase() === "mars" ? "active" : null)
+            }
+            onClick={() => setActive("Mars")}
+          >
+            mars
+          </button>
+          <button
+            className={
+              "destination-nav-link" +
+              " " +
+              (active.toLowerCase() === "europa" ? "active" : null)
+            }
+            onClick={() => setActive("Europa")}
+          >
+            europa
+          </button>
+          <button
+            className={
+              "destination-nav-link" +
+              " " +
+              (active.toLowerCase() === "titan" ? "active" : null)
+            }
+            onClick={() => setActive("Titan")}
+          >
+            titan
+          </button>
+        </nav>
         <div className="destination-info">
           <div className="destination-title">{destination.name}</div>
           <div className="destination-text">{destination.description}</div>

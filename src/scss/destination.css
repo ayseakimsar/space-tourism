@@ -92,4 +92,40 @@
   text-transform: uppercase;
   color: #fff;
   margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+  .destination-page {
+    max-width: 768px;
+    position: relative;
+  }
+  .destination-page-title {
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3.375px;
+    margin-top: 40px;
+  }
+  .destination-page-title span {
+    opacity: 0.25;
+    margin-right: 19px;
+    margin-left: 38.5px;
+  }
+  .destination-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .destination-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .destination-section img {
+    margin-left: 0;
+    width: 30rem;
+    height: 30rem;
+  }
 }/*# sourceMappingURL=destination.css.map */

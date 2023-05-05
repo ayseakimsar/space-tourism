@@ -1,31 +1,20 @@
 import "../scss/technology.scss";
 import data from "../data.json";
 import { useState } from "react";
-import launchVehicleImg from "../assets/technology/image-launch-vehicle-portrait.jpg";
-import spaceportImg from "../assets/technology/image-spaceport-portrait.jpg";
-import spaceCapsuleImg from "../assets/technology/image-space-capsule-portrait.jpg";
 
 export default function Technology() {
   const [activeLink, setActiveLink] = useState(0);
-  let currentImg;
-  if (activeLink === 0) {
-    currentImg = launchVehicleImg;
-  } else if (activeLink === 1) {
-    currentImg = spaceportImg;
-  } else if (activeLink === 2) {
-    currentImg = spaceCapsuleImg;
-  }
 
   return (
     <div className="technology-page">
-      <header className="destination-page-title">
-        <span>01</span>pick your destination
+      <header className="technology-page-title">
+        <span>03</span>space launch 101
       </header>
       <section className="technology">
         <nav className="technology-nav">
           <button
             className={
-              "technology-nav-link" + " " + (activeLink === 0 ? "active" : null)
+              "technology-nav-link" + " " + (activeLink === 0 ? "active" : "")
             }
             onClick={() => setActiveLink(0)}
           >
@@ -33,7 +22,7 @@ export default function Technology() {
           </button>
           <button
             className={
-              "technology-nav-link" + " " + (activeLink === 1 ? "active" : null)
+              "technology-nav-link" + " " + (activeLink === 1 ? "active" : "")
             }
             onClick={() => setActiveLink(1)}
           >
@@ -41,7 +30,7 @@ export default function Technology() {
           </button>
           <button
             className={
-              "technology-nav-link" + " " + (activeLink === 2 ? "active" : null)
+              "technology-nav-link" + " " + (activeLink === 2 ? "active" : "")
             }
             onClick={() => setActiveLink(2)}
           >
@@ -57,11 +46,15 @@ export default function Technology() {
             {data.technology[activeLink].description}
           </div>
         </div>
-        <img
-          className="technology-img"
-          src={currentImg}
-          alt={data.technology[activeLink].name}
-        />
+        <div
+          className={
+            "technology-img-container" +
+            " " +
+            (activeLink === 0 ? "launch-vehicle" : "") +
+            (activeLink === 1 ? "spaceport" : "") +
+            (activeLink === 2 ? "space-capsule" : "")
+          }
+        ></div>
       </section>
     </div>
   );

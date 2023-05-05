@@ -2,51 +2,79 @@
   display: flex;
   gap: 384px;
   color: white;
-  margin-top: 251px;
-  margin-left: 167px;
-  width: 450px;
-  height: 382px;
+  margin-top: 25.1rem;
+  margin-left: 16.7rem;
+  width: 45rem;
+  height: 38.2rem;
 }
 .hero-intro-title {
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: 400;
-  line-height: 33.6px;
+  line-height: 3.36rem;
   letter-spacing: 4.72px;
   text-transform: uppercase;
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
   color: #d0d6f9;
 }
 .hero-title {
   font-family: "Bellefair", serif;
-  font-size: 150px;
+  font-size: 15rem;
   text-transform: uppercase;
   color: #fff;
 }
 .hero-text {
   font-family: "Barlow", sans-serif;
   color: #d0d6f9;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
 }
 .hero-btn {
   align-self: flex-end;
-  width: 274px;
-  height: 274px;
+  width: 27.4rem;
+  height: 27.4rem;
 }
 .hero-btn-explore {
-  width: 274px;
-  height: 274px;
+  width: 27.4rem;
+  height: 27.4rem;
   border-radius: 50%;
   border: none;
   color: #0b0d17;
   font-family: "Bellefair";
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 3.2rem;
   letter-spacing: 2px;
-  line-height: 37px;
+  line-height: 3.7rem;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
 .hero-btn-explore:hover {
   box-shadow: 0 0 0 88px rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15.6rem;
+  }
+  .hero-text-group {
+    text-align: center;
+    margin-top: 10.6rem;
+  }
+  .hero-intro-title {
+    font-size: 2rem;
+  }
+  .hero-text {
+    font-size: 16px;
+  }
+  .hero-btn {
+    align-self: center;
+    width: 24.2rem;
+    height: 24.2rem;
+  }
+  .hero-btn-explore {
+    width: 24.2rem;
+    height: 24.2rem;
+  }
 }/*# sourceMappingURL=home.css.map */

@@ -1,7 +1,26 @@
+.technology-page {
+  position: relative;
+}
+.technology-page-title {
+  color: #fff;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  letter-spacing: 4.725px;
+  margin-top: 76px;
+}
+.technology-page-title span {
+  opacity: 0.25;
+  margin-right: 28px;
+  margin-left: 166.5px;
+}
+
 .technology {
   color: white;
   display: flex;
   gap: 80px;
+  margin-left: 165px;
+  margin-top: 137px;
 }
 .technology-nav {
   display: flex;
@@ -20,6 +39,15 @@
   text-align: center;
   letter-spacing: 2px;
   color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.technology-nav-link:hover {
+  background-color: #0b0d17;
+  border-color: #fff;
+}
+.technology-nav-link.active {
+  background-color: #fff;
+  color: #0b0d17;
 }
 .technology-intro-title {
   font-family: "Barlow Condensed";
@@ -34,10 +62,34 @@
   font-size: 56px;
   line-height: 64px;
   text-transform: uppercase;
+  margin-top: 11px;
 }
 .technology-text {
   font-family: "Barlow";
   font-size: 18px;
   line-height: 32px;
   color: #d0d6f9;
+  margin-top: 17px;
+  width: 444px;
+}
+.technology-img {
+  position: absolute;
+  right: 0px;
+  top: 88px;
+}
+
+@media (max-width: 768px) {
+  .technology-page-title {
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3.375px;
+    margin-top: 40px;
+  }
+  .technology-page-title span {
+    opacity: 0.25;
+    margin-right: 19px;
+    margin-left: 38.5px;
+  }
 }/*# sourceMappingURL=technology.css.map */
